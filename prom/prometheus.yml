@@ -1,0 +1,23 @@
+
+# my global config
+global:
+  scrape_interval:     15s # Set the scrape interval to every [duration]. Default is every 1 minute.
+  evaluation_interval: 15s # Evaluate rules every [duration]. The default is every 1 minute.
+  # scrape_timeout is set to the global default (10s).
+
+# Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
+rule_files: []
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['127.0.0.1:9090']
+
+  - job_name: 'bbdata-api'
+    metrics_path: '/prometheus'
+    static_configs:
+      - targets: ['$APP_BBDATA.web.1:8111']
+
+  - job_name: 'cassandra'
+    static_configs:
+      - targets: ['$APP_CASSANDRA.web.1:7070']
