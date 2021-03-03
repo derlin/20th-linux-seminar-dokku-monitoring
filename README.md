@@ -49,11 +49,13 @@ pip install requests
 ./datafaker.py -u <BB_API_BASE_URL> --interval 1.0
 ```
 
-## Grafana dashboards
+## Grafana
 
-in `graf`, you'll find two dashboards:
+A summary of my demo with Grafana can be found in `grafana-demo.md`.
 
-* `cassahdra-dashboard.json` comes from [Grafana Labs](https://grafana.com/grafana/dashboards/5408), 
+In `graf`, you'll find two dashboards:
+
+* `cassandra-dashboard.json` comes from [Grafana Labs](https://grafana.com/grafana/dashboards/5408), 
    but contains some additional bugfixes (correct datasource);
 * `bbdata-dashboard.json` is a custom-made dashboard specifically for BBData;
 
