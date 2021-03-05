@@ -7,7 +7,7 @@ set -exuo pipefail
 ##
 
 # Host, username, and home directory on the the dokku server
-DOKKU_HOST=dokku-dev.gdgfribourg.ch
+DOKKU_HOST=dokku-demo.isc.heia-fr.ch
 DOKKU_SSH=ubuntu@$DOKKU_HOST
 DOKKU_HOME_DIR=/home/ubuntu
 

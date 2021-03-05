@@ -5,8 +5,7 @@ from time import sleep
 
 import requests
 
-BB_URL = "http://bbapi.dokku-dev.gdgfribourg.ch"
-# BB_URL = "http://bbapi.dokku-demo.isc.heia-fr.ch"
+BB_URL = "http://bbapi.dokku-demo.isc.heia-fr.ch"
 
 BB_HEADERS = dict(
     bbuser='1',
